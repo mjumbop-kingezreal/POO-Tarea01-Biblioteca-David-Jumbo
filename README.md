@@ -1,43 +1,23 @@
-# POO-Tarea01-Biblioteca-David-Jumbo
+# POO-Tarea01-Biblioteca
 
-## Información del Estudiante
-- **Nombre:** David Jumbo
-- **Asignatura:** Programación Orientada a Objetos
-- **Universidad:** Universidad Estatal de Milagro - UNEMI
-- **Semestre:** [Tu semestre]
+**Integrantes:** David Jumbo, Steven Orellana , Luis Orellana        
+**Carrera:** Ingeniería en Software   
+**Semestre:** 4to semestre 
 
-## Descripción del Proyecto
+## Descripción del Caso de Estudio
+
 Sistema de Gestión de Biblioteca Universitaria implementado en Python
-aplicando los 4 pilares de la Programación Orientada a Objetos.
-
-## Estructura del Caso de Estudio
+aplicando los 4 pilares de la POO.
 
 ### Clases del Sistema
-| Clase | Descripción | Relación |
-|---|---|---|
-| `Persona` | Clase base con cédula, nombre y apellido | Base (herencia) |
-| `Estudiante` | Hereda de Persona, agrega carrera | Hereda de Persona |
-| `Libro` | Gestiona ISBN, título, autor y disponibilidad | Composición con Biblioteca |
-| `Prestamo` | Asocia un libro con un estudiante | Asociación |
-| `Biblioteca` | Clase gestora principal del sistema | Contiene todo |
+- `Persona` → clase base con cédula, nombre y apellido
+- `Estudiante` → hereda de Persona, agrega carrera
+- `Libro` → gestiona ISBN, título, autor y disponibilidad
+- `Prestamo` → asocia un libro con un estudiante
+- `Biblioteca` → clase gestora principal del sistema
 
-### Pilares POO aplicados
-- **Abstracción:** Solo se modelan los atributos relevantes de cada entidad
-- **Encapsulamiento:** Atributos privados con prefijo `_`, acceso mediante `@property`
-- **Herencia:** `Estudiante` hereda de `Persona` usando `super().__init__()`
-- **Polimorfismo:** El método `__str__()` se redefine en cada clase
 
-### Requerimientos cumplidos
-- RF-01: Registrar libros
-- RF-02: Registrar estudiantes  
-- RF-03: Registrar préstamos
-- RF-04: Validar disponibilidad antes de prestar
-- RF-05: Registrar devolución de libro
-- RF-06: Consultar préstamos activos
-
-## Ejecución
+### Ejecución
 ```bash
 python main.py
 ```
-
-## Estructura del Proyecto
